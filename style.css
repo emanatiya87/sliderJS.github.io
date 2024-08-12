@@ -1,0 +1,78 @@
+img{
+    width: 100%;
+    cursor: pointer;
+
+}
+#box{
+    width: 100%;
+    height: 800px;
+    background-image: url(kitchen_adventurer_caramel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: changeBackground 40s infinite;
+}
+
+@keyframes changeBackground {
+    0% {
+        background-image: url('kitchen_adventurer_caramel.jpg');
+    }
+ 
+    33% {
+        background-image: url('kitchen_adventurer_cheesecake_brownie.jpg');
+    }
+    66% {
+        background-image: url('kitchen_adventurer_donut.jpg');
+    }
+    100% {
+        background-image: url('kitchen_adventurer_lemon.jpg');
+    }
+}
+#boxItems{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card img{
+    opacity: 0.8;
+}
+i{
+    font-size: 50px;
+    padding: 10px;
+    color: gray;
+    cursor: pointer;    
+visibility: hidden;
+transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+#box:hover{
+    i{  
+    visibility: visible;
+    } 
+}
+.card:hover{
+    img{
+        opacity: 1;
+    }
+}
+
+.col-lg-3{
+    position: relative;
+}
+/* bom */
+body{
+    height: 2000px;
+}
+.header{
+    background-color: brown;
+}
+.header-Fixed{
+background-color: green;
+position: fixed;
+top:0;
+right: 0;
+left: 0;
+}
